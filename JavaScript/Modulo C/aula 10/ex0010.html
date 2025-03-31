@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <label >Digite de qual país você é</label>
+    <input type="text" id="txtnac">
+    <input type="button" value="Enviar" onclick="registrar()"/>
+    <div id="res"></div>
+
+    <script>
+        function registrar() {
+            var nac = document.getElementById('txtnac').value.toLowerCase().trim();
+            var res = document.getElementById('res');
+
+            res.innerHTML = `<p>Você mora em ${nac}</p>`;
+
+            if (nac == 'brasil') {
+                
+                res.innerHTML += `<p>Você é brasileiro!</p>`;
+            } else {
+                res.innerHTML += `<p>Você é estrangeiro!</p>`;
+            }
+
+            
+        }
+    </script>
+</body>
+</html>
