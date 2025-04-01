@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repetição</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        Vamos Contar
+    </header>
+    <section>
+        <div>
+            <p>
+                Inicio:
+                <input type="number" name="inicio" id="inicio">
+            </p>
+            <p>
+                Fim:
+                <input type="number" name="fim" id="fim" min="1">
+            </p>
+            <p>
+                Passo:
+                <input type="number" name="passo" id="passo" min="1">
+            </p>
+            <input type="button" onclick="contar()" value="Contar">
+        </div>
+        <div id="res">
+            <p id="mensagem">Preparando a contagem</p>
+        </div>
+    </section>
+</body>
+<script src="script.js"></script>
+</html>
